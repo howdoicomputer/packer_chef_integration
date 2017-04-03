@@ -1,4 +1,4 @@
 #!/bin/bash
 
-chef-client -j /etc/chef/first-boot.json -N `ec2metadata --instance-id`
+chef-client -j /etc/chef/first-boot.json
 rm /etc/chef/validation.pem
