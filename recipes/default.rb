@@ -30,8 +30,7 @@ template '/etc/chef/client.rb' do
   variables(
     chef_server_url:        node['packer_chef_integration']['chef_server_url'],
     validation_client_name: node['packer_chef_integration']['validation_client_name'],
-    ssl_verify:             node['packer_chef_integration']['ssl_verify'],
-    node_name:              node['ec2']['instance_id']
+    ssl_verify:             node['packer_chef_integration']['ssl_verify']
   )
 
   source 'client.rb.erb'
