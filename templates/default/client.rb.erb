@@ -6,6 +6,6 @@ client_key       "/etc/chef/client.pem"
 validation_client_name "<%= @validation_client_name %>"
 validation_key "/etc/chef/validation.pem"
 
-<% if @ssl_verify %>
+<% if !@ssl_verify %>
 ssl_verify_mode :verify_none
 <% end %>
