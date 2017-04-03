@@ -4,7 +4,7 @@ PCI is a very, very simple cookbook that is meant to be included in a Packer che
 
 If you mean to keep the validation key secret from anybody who has access to the generated image then you'll have to wrap this cookbook aaaaand then remove the resource that copies the key. This means that you'll have to be responsible for another method of key distribution. Like Vault, maybe!
 
-*Example:*
+**Example:**
 
 ```
 "provisioners": [
